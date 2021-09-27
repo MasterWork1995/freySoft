@@ -189,23 +189,11 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\images\\hero-mobile1.png":[["hero-mobile1.ea9a954b.png","images/hero-mobile1.png"],"images/hero-mobile1.png"],"./..\\images\\hero-mobile2.png":[["hero-mobile2.87d256d5.png","images/hero-mobile2.png"],"images/hero-mobile2.png"],"./..\\images\\hero-tablet.png":[["hero-tablet.482b5661.png","images/hero-tablet.png"],"images/hero-tablet.png"],"./..\\images\\hero-desk1.png":[["hero-desk1.6552055f.png","images/hero-desk1.png"],"images/hero-desk1.png"],"./..\\images\\hero-desk2.png":[["hero-desk2.d13eface.png","images/hero-desk2.png"],"images/hero-desk2.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
-require("./sass/main.scss");
-
-const refs = {
-  menuBtnRef: document.querySelector('[data-menu-button]'),
-  mobileMenuRef: document.querySelector('[data-menu]')
-};
-
-const onToggleMobileMenu = () => {
-  refs.mobileMenuRef.classList.toggle('is-open');
-  refs.menuBtnRef.classList.toggle('is-open');
-};
-
-refs.menuBtnRef.addEventListener('click', onToggleMobileMenu);
-},{"./sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+require("../sass/main.scss");
+},{"../sass/main.scss":"sass/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -233,7 +221,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59671" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53470" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -409,5 +397,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/src.e31bb0bc.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/index.js"], null)
+//# sourceMappingURL=/js.00a46daa.js.map
